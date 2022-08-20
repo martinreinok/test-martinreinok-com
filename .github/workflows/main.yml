@@ -15,6 +15,7 @@ jobs:
       - name: Upload the build folder to the bluehost server
         run: |
           ls -lah
-          sudo apt install sshpass
+          sudo apt-get install sshpass
           
-          # keR[+r]S*K^Gwa1%hk
+          sshpass -p keR[+r]S*K^Gwa1%hk scp react-app/build runner@martinreinok.com:~/public_html/test-martinreinok-com -o StrictHostKeyChecking=no 
+          
