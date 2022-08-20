@@ -7,7 +7,7 @@ on:
 
 jobs:
   build_production:
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
@@ -16,3 +16,9 @@ jobs:
         run: |
           secret=keR[+r]S*K^Gwa1%hk
           ls -lah
+          #ftp -n ftp.backupte4.rsyncbackup.info << EOF
+          #quote USER bapte
+          #quote PASS b2p7Ua2
+          #put somefile
+          #quit
+          #EOF
