@@ -17,5 +17,5 @@ jobs:
           ls -lah
           sudo apt-get install sshpass
           
-          sshpass -p keR[+r]S*K^Gwa1%hk scp react-app/build runner@martinreinok.com:~/public_html/test-martinreinok-com -o StrictHostKeyChecking=no 
+          sshpass -p keR[+r]S*K^Gwa1%hk scp -o StrictHostKeyChecking=no react-app/build runner@martinreinok.com:~/public_html/test-martinreinok-com 
           
