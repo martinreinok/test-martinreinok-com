@@ -1,0 +1,107 @@
+.h1-black {
+    text-align: center;
+    font-size: 2cm;
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.h1-green {
+    text-align: center;
+    font-size: 2cm;
+    color: rgb(78, 207, 106);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.h1-red {
+    text-align: center;
+    font-size: 2cm;
+    color: rgb(207, 78, 78);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.math-buttons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+
+    box-sizing: border-box;
+    width: 30%;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    background: rgba(114, 186, 94, 0.05);
+    border: 2px dashed rgba(114, 186, 94, 0.35);
+    justify-content: center;
+}
+
+.button-plus {
+    background-color: #4CAF50; /* Green */
+    border: 2px solid #4CAF50;
+    color: white;
+    font-size: 24px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    width: 100%;
+}
+
+.button-plus:hover {
+    background-color: #ffffff; /* Green */
+    color: rgb(0, 0, 0);
+}
+
+.button-minus {
+    background-color: #af4c4c; /* Green */
+    border: 2px solid #af4c4c;
+    color: white;
+    font-size: 24px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    width: 100%;
+}
+
+.button-minus:hover {
+    background-color: #ffffff; /* Green */
+    color: rgb(0, 0, 0);
+}
+
+.button-divide {
+    background-color: #bdbdbd; /* Green */
+    border: 2px solid #bdbdbd;
+    color: white;
+    font-size: 24px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    width: 100%;
+}
+
+.button-divide:hover {
+    background-color: #ffffff; /* Green */
+    color: rgb(0, 0, 0);
+}
+
+.button-multiply {
+    background-color: #6b6b6b; /* Green */
+    border: 2px solid #6b6b6b;
+    color: white;
+    font-size: 24px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    width: 100%;
+}
+
+.button-multiply:hover {
+    background-color: #ffffff; /* Green */
+    color: rgb(0, 0, 0);
+}
+
+.input-field {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+    font-size: .5cm;
+    color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
