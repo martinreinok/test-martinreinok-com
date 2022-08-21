@@ -13,9 +13,12 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: Upload the build folder to the bluehost server
+        env:
+          USERNAME: ${{ secrets.SSH_USERNAME }}
+          PASSWORD: ${{ secrets.SSH_PASSWORD }}
         run: |
           ls -lah
           sudo apt-get install sshpass
           
-          sshpass -p ,4Pr*Ukjjj scp -r -o StrictHostKeyChecking=no react-app/build/* martiqt0@martinreinok.com:~/public_html/test-martinreinok-com 
+          sshpass -p "$PASSWORD" scp -r -o StrictHostKeyChecking=no react-app/build/* "$USERNAME":~/public_html/test-martinreinok-com 
           
