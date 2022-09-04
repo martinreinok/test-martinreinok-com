@@ -12,13 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Upload the build folder to the bluehost server
+      - name: Upload the build folder to the bluehost server, delete first and then upload new
         env:
           USERNAME: ${{ secrets.SSH_USERNAME }}
           PASSWORD: ${{ secrets.SSH_PASSWORD }}
         run: |
           ls -lah
           sudo apt-get install sshpass
-          
+
+          sshpass -p "$PASSWORD" ssh StrictHostKeyChecking=no "$USERNAME" 'rm -rf ~/public_html/test-martinreinok-com && mkdir ~/public_html/test-martinreinok-com' 
           sshpass -p "$PASSWORD" scp -r -o StrictHostKeyChecking=no javascript-app/* "$USERNAME":~/public_html/test-martinreinok-com 
           
