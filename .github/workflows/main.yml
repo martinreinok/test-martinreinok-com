@@ -20,6 +20,7 @@ jobs:
           ls -lah
           sudo apt-get install sshpass
 
-          sshpass -p "$PASSWORD" ssh -o StrictHostKeyChecking=no "$USERNAME" 'rm -rf ~/public_html/test-martinreinok-com && mkdir ~/public_html/test-martinreinok-com' 
+          sshpass -p "$PASSWORD" ssh -o StrictHostKeyChecking=no "$USERNAME" 'rm -rf ~/public_html/test-martinreinok-com && mkdir ~/public_html/test-martinreinok-com'
+           
           sshpass -p "$PASSWORD" scp -r -o StrictHostKeyChecking=no javascript-app/* "$USERNAME":~/public_html/test-martinreinok-com 
           
