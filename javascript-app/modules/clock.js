@@ -17,13 +17,13 @@ export function clockApp() {
     setRotation(secondHand, secondsRatio)
     setRotation(minuteHand, minutesRatio)
     setRotation(hourHand, hoursRatio)
-    document.getElementById("clock-time").innerHTML = currentDateClock.getHours() + ":" + currentDateClock.getMinutes() + ":" + currentDateClock.getSeconds()
+    //document.getElementById("clock-time").innerHTML = currentDateClock.getHours() + ":" + currentDateClock.getMinutes() + ":" + currentDateClock.getSeconds()
     }
 
     function setRotation(element, rotationRatio) {
     element.style.setProperty('--rotation', rotationRatio * 360)
     }
-
+    
     setClock()
   }
 
