@@ -7,7 +7,7 @@ function setup() {
     renderer.parent("flow-field-canvas");
     background(0);
     
-    var density = 40
+    var density = 10
 
     var space = width / density
 
