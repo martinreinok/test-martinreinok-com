@@ -1,13 +1,13 @@
 
 var points = []
-var angleMultiplier = 0.001
+var angleMultiplier = 0.00001
 
 function setup() {
     let renderer = createCanvas(windowWidth, windowHeight);
     renderer.parent("flow-field-canvas");
     background(0);
     
-    var density = 10
+    var density = 20
 
     var space = width / density
 
@@ -30,7 +30,7 @@ function draw() {
 
         fill(r, g, b)
 
-        var angle = map(noise(points[i].x * angleMultiplier, points[i].y * angleMultiplier), 0, 10, 100, 100000)
+        var angle = map(noise(points[i].x * angleMultiplier, points[i].y * angleMultiplier), 100, 1, 720, 1000000)
         points[i].add(createVector(cos(angle), sin(angle)))
         ellipse(points[i].x, points[i].y, 2)
     }
